@@ -12,13 +12,7 @@ const getLocaleColumns = (options: {
   coordinates: boolean;
 }): Column[] => {
   const { consonants, vowels, tiles, blanks, words, coordinates } = options;
-  const columns: Column[] = [
-    {
-      className: '',
-      id: ResultColumn.Word,
-      translationKey: 'common.word',
-    },
-  ];
+  const columns: Column[] = [];
   if (coordinates) {
     columns.push({
       className: '',
@@ -26,6 +20,12 @@ const getLocaleColumns = (options: {
       translationKey: 'common.coordinates',
     });
   }
+  columns.push({
+    className: '',
+    id: ResultColumn.Word,
+    translationKey: 'common.word',
+  });
+
   if (tiles) {
     columns.push({
       className: styles.stat,
