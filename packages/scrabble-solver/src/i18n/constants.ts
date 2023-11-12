@@ -14,6 +14,7 @@ interface LocaleFeatures {
   name: string;
   separator: string;
   vowels: boolean;
+  coordinates: boolean;
 }
 
 export const LOCALE_FEATURES: Record<Locale, LocaleFeatures> = {
@@ -27,6 +28,7 @@ export const LOCALE_FEATURES: Record<Locale, LocaleFeatures> = {
     name: 'German',
     separator: `${COMMA_LATIN} `,
     vowels: true,
+    coordinates: false,
   },
   [Locale.EN_GB]: {
     comma: COMMA_LATIN,
@@ -38,6 +40,7 @@ export const LOCALE_FEATURES: Record<Locale, LocaleFeatures> = {
     name: 'English (GB)',
     separator: `${COMMA_LATIN} `,
     vowels: true,
+    coordinates: false,
   },
   [Locale.EN_US]: {
     comma: COMMA_LATIN,
@@ -49,6 +52,7 @@ export const LOCALE_FEATURES: Record<Locale, LocaleFeatures> = {
     name: 'English (US)',
     separator: `${COMMA_LATIN} `,
     vowels: true,
+    coordinates: false,
   },
   [Locale.ES_ES]: {
     comma: COMMA_LATIN,
@@ -60,6 +64,7 @@ export const LOCALE_FEATURES: Record<Locale, LocaleFeatures> = {
     name: 'Spanish',
     separator: `${COMMA_LATIN} `,
     vowels: true,
+    coordinates: false,
   },
   [Locale.FA_IR]: {
     comma: COMMA_ARABIC,
@@ -71,6 +76,7 @@ export const LOCALE_FEATURES: Record<Locale, LocaleFeatures> = {
     name: 'Persian',
     separator: `${COMMA_ARABIC} `,
     vowels: false,
+    coordinates: false,
   },
   [Locale.FR_FR]: {
     comma: COMMA_LATIN,
@@ -82,6 +88,7 @@ export const LOCALE_FEATURES: Record<Locale, LocaleFeatures> = {
     name: 'French',
     separator: `${COMMA_LATIN} `,
     vowels: true,
+    coordinates: false,
   },
   [Locale.PL_PL]: {
     comma: COMMA_LATIN,
@@ -93,6 +100,7 @@ export const LOCALE_FEATURES: Record<Locale, LocaleFeatures> = {
     name: 'Polish',
     separator: `${COMMA_LATIN} `,
     vowels: true,
+    coordinates: false,
   },
   [Locale.RO_RO]: {
     comma: COMMA_LATIN,
@@ -104,5 +112,6 @@ export const LOCALE_FEATURES: Record<Locale, LocaleFeatures> = {
     name: 'Romanian',
     separator: `${COMMA_LATIN} `,
     vowels: false,
+    coordinates: true,
   },
 };

@@ -25,9 +25,6 @@
     "Frontend",
     "App"
   ],
-  "engines": {
-    "node": ">=16"
-  },
   "bin": {
     "scrabble-solver": "./bin/scrabble-solver.js"
   },
